@@ -873,7 +873,7 @@ there.
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px 50px;
+  padding: 10px 20px;
   z-index: 99999;
   box-sizing: border-box; }
   .global-nav a {
@@ -881,14 +881,40 @@ there.
   .global-nav h3 {
     color: #000000;
     font-weight: 700;
-    margin-bottom: 5px;
     font-size: 1em;
+    margin-bottom: 0px;
     letter-spacing: 0.1px; }
+  .global-nav .left-nav {
+    display: inline-block;
+    position: relative;
+    top: 5px; }
+  .global-nav .right-nav {
+    float: right;
+    height: 100%; }
+    .global-nav .right-nav img {
+      width: 30px; }
+
+@media (max-width: 750px) {
+  .mobile-justify {
+    position: relative;
+    top: 65px; } }
+
+.footer {
+  border-top: 1px solid #e8e8e8;
+  color: #898989;
+  padding: 10px 20px;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white; }
+  .footer .copyright {
+    text-align: left;
+    width: 100%; }
 
 .app-detail .page-wrapper {
   padding: 15% 10%;
   font-family: 'Roboto', sans-serif;
-  background-color: #EEEEEE;
+  background-color: #e8e8e8;
   min-height: 100vh; }
   @media (max-width: 750px) {
     .app-detail .page-wrapper {
@@ -902,7 +928,8 @@ there.
   @media (max-width: 750px) {
     .app-detail .container {
       width: 100%;
-      padding: 0%; } }
+      padding: 0%;
+      box-shadow: none; } }
   .app-detail .container .row {
     margin-bottom: 50px;
     z-index: 5;
@@ -912,16 +939,20 @@ there.
         padding: 5%;
         margin-bottom: 0px; } }
   .app-detail .container .transparent-bg {
+    display: none;
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url(../img/space/img5.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.1; }
+    height: 100%; }
+    @media (max-width: 750px) {
+      .app-detail .container .transparent-bg {
+        display: block;
+        background-image: url(../img/space/app-icon.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.1; } }
   .app-detail .container .app-icon-wrapper {
     height: 100%;
     width: 33%;
@@ -968,7 +999,7 @@ there.
       .app-detail .container .app-details .bottom-wrapper .download-btn {
         float: right;
         background-color: #776ea7;
-        color: #EEEEEE;
+        color: #e8e8e8;
         padding: 0px 20px;
         position: relative;
         bottom: 20px; }
@@ -978,7 +1009,9 @@ there.
     color: #898989; }
   @media (max-width: 750px) {
     .app-detail .container .description-wrapper {
-      border-bottom: 1px solid #EEEEEE; } }
+      border-bottom: 1px solid #e8e8e8; } }
+  .app-detail .container .section-title {
+    padding: 5%; }
   .app-detail .container .thumbnail-wrapper {
     box-sizing: border-box;
     width: 100%;

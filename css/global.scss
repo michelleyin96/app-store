@@ -7,7 +7,7 @@ $blue: #5D98AE;
 $purple: #776ea7;
 $black: #000000;
 $white: #ffffff;
-$grey: #EEEEEE;
+$grey: #e8e8e8;
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -30,7 +30,7 @@ $grey: #EEEEEE;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 10px 50px;
+	padding: 10px 20px;
 	z-index: 99999;
 	box-sizing: border-box;
 	a {
@@ -39,8 +39,40 @@ $grey: #EEEEEE;
 	h3 {
 		color: $black;
 		font-weight: 700;
-		margin-bottom: 5px;
 		font-size: 1em;
+		margin-bottom: 0px;
 		letter-spacing: 0.1px;
+	}
+	.left-nav {
+		display: inline-block;
+		position: relative;
+		top: 5px;
+	}
+	.right-nav {
+		float: right;
+		height: 100%;
+		img {
+			width: 30px;
+		}
+	}
+}
+
+.mobile-justify {
+	@media (max-width: 750px) {
+		position: relative;
+		top: 65px;
+	}
+}
+.footer {
+	border-top: 1px solid $grey;
+	color: #898989;
+	padding: 10px 20px;
+	height: 60px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: white;
+	.copyright {
+		text-align: left;
+		width: 100%;
 	}
 }
