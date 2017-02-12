@@ -1,0 +1,46 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+// Global variables
+$brown: #B9603A;
+$blue: #5D98AE;
+$purple: #776ea7;
+$black: #000000;
+$white: #ffffff;
+$grey: #EEEEEE;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+//Classes to vertically center things
+.vertical-center {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-center--child {
+  align-self: center;
+}
+
+
+.global-nav {
+	background-color: $white;
+	height: 65px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px 50px;
+	z-index: 99999;
+	box-sizing: border-box;
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		color: $black;
+		font-weight: 700;
+		margin-bottom: 5px;
+		font-size: 1em;
+		letter-spacing: 0.1px;
+	}
+}
