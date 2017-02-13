@@ -1,0 +1,67 @@
+.app-listing {
+	.heading-wrapper {
+		text-align: center;
+		@media (max-width: 550px) {
+			display: none;
+		}
+	}
+	.container {
+		width: 100%;
+	}
+	.columns {
+		position: relative;
+		padding: 20px 5%;
+	}
+	.white-bg {
+		@media (max-width: 550px) {
+			background-color: #ffffff;
+		}
+	}
+	.app-details {
+		display: inline-block;
+		height: 100%;
+		position: relative;
+		bottom: 10px;
+		margin-left: 15px;
+		@media (min-width: 550px) {
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
+	.app-category {
+		border-radius: 12px;
+		padding: 2px 10px;
+		font-size: 0.5em;
+		border: 1px solid black;
+		display: inline-block;
+	}
+	.app-icon {
+		width: 75px;
+		border-radius: 10px;
+		display: inline-block;
+	}
+	.app-name {
+		font-size: 1em;
+	}
+	.company-name {
+		font-size: 0.75em;
+	}
+	.app-category {
+		margin-top: 15px;
+		@media (min-width: 550px) {
+			display: none;
+		}
+	}
+	.download-btn {
+		float: right;
+		background-color: $purple;
+		color: $grey;
+		padding: 0px 10px;
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		@media (min-width: 550px) {
+			display: none;
+		}
+	}
+}

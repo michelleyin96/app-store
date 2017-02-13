@@ -860,6 +860,9 @@ there.
 * {
   font-family: 'Roboto', sans-serif; }
 
+html, body {
+  height: 100%; }
+
 .vertical-center {
   display: flex;
   justify-content: center; }
@@ -893,6 +896,23 @@ there.
     height: 100%; }
     .global-nav .right-nav img {
       width: 30px; }
+  @media (max-width: 750px) {
+    .global-nav {
+      border-bottom: 1px solid #e8e8e8; } }
+
+.page-wrapper {
+  padding: 15% 10%;
+  min-height: 100%;
+  margin-bottom: -60px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .page-wrapper {
+      padding: 0%; } }
+  .page-wrapper:after {
+    content: "";
+    display: block; }
 
 @media (max-width: 750px) {
   .mobile-justify {
@@ -911,16 +931,60 @@ there.
     text-align: left;
     width: 100%; }
 
-.app-detail .page-wrapper {
-  padding: 15% 10%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #e8e8e8;
-  min-height: 100vh; }
-  @media (max-width: 750px) {
-    .app-detail .page-wrapper {
-      padding: 0%;
-      position: relative;
-      top: 65px; } }
+.app-listing .heading-wrapper {
+  text-align: center; }
+  @media (max-width: 550px) {
+    .app-listing .heading-wrapper {
+      display: none; } }
+.app-listing .container {
+  width: 100%; }
+.app-listing .columns {
+  position: relative;
+  padding: 20px 5%; }
+@media (max-width: 550px) {
+  .app-listing .white-bg {
+    background-color: #ffffff; } }
+.app-listing .app-details {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  bottom: 10px;
+  margin-left: 15px; }
+  @media (min-width: 550px) {
+    .app-listing .app-details {
+      margin-left: 0;
+      margin-top: 10px; } }
+.app-listing .app-category {
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 0.5em;
+  border: 1px solid black;
+  display: inline-block; }
+.app-listing .app-icon {
+  width: 75px;
+  border-radius: 10px;
+  display: inline-block; }
+.app-listing .app-name {
+  font-size: 1em; }
+.app-listing .company-name {
+  font-size: 0.75em; }
+.app-listing .app-category {
+  margin-top: 15px; }
+  @media (min-width: 550px) {
+    .app-listing .app-category {
+      display: none; } }
+.app-listing .download-btn {
+  float: right;
+  background-color: #776ea7;
+  color: #e8e8e8;
+  padding: 0px 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  @media (min-width: 550px) {
+    .app-listing .download-btn {
+      display: none; } }
+
 .app-detail .container {
   background-color: #ffffff;
   padding: 5%;
@@ -1000,9 +1064,9 @@ there.
         float: right;
         background-color: #776ea7;
         color: #e8e8e8;
-        padding: 0px 20px;
+        padding: 0px 10px;
         position: relative;
-        bottom: 20px; }
+        bottom: 15px; }
   .app-detail .container .description-wrapper p {
     font-weight: 300;
     font-size: 14px;

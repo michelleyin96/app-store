@@ -7,10 +7,15 @@ $blue: #5D98AE;
 $purple: #776ea7;
 $black: #000000;
 $white: #ffffff;
+$off-white: #f8f8f8;
 $grey: #e8e8e8;
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	height: 100%;
 }
 
 //Classes to vertically center things
@@ -55,6 +60,25 @@ $grey: #e8e8e8;
 			width: 30px;
 		}
 	}
+	@media (max-width: 750px) {
+		border-bottom: 1px solid $grey;
+	}
+}
+
+.page-wrapper {
+	padding: 15% 10%;
+	min-height: 100%;
+	margin-bottom: -60px;
+	font-family:'Roboto', sans-serif;
+	background-color: $off-white;
+	box-sizing: border-box;
+	@media (max-width: 750px) {
+		padding: 0%;
+	}
+	&:after {
+		content: "";
+		display: block;
+	}
 }
 
 .mobile-justify {
@@ -63,6 +87,7 @@ $grey: #e8e8e8;
 		top: 65px;
 	}
 }
+
 .footer {
 	border-top: 1px solid $grey;
 	color: #898989;
