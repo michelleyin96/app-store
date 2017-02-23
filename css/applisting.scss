@@ -4,22 +4,39 @@
 		max-width: 700px;
 		margin: 0 auto;
 		@media (max-width: 550px) {
-			padding: 15px 10px;
+			padding: 50px 20px 10px 20px;
 		}
 		#mce-EMAIL {
 			width: 50%;
 			display: inline-block;
+			@media (max-width: 550px) {
+				width: 100%;
+			}
 		}
 		.clear {
 			display: inline-block;
+			@media (max-width: 550px) {
+				width: 100%;
+			}
 			#mc-embedded-subscribe {
 				background-color: #4a5374;
 				color: $grey;
+				@media (max-width: 550px) {
+					width: 100%;
+				}
 			}
 		}
 	}
 	.container {
 		width: 100%;
+		@media (max-width: 550px) {
+			padding: 0px;
+		}
+	}
+	.apps-wrapper {
+		@media (max-width: 550px) {
+			padding: 0px;
+		}
 	}
 	.columns {
 		position: relative;
@@ -28,6 +45,11 @@
 	.white-bg {
 		@media (max-width: 550px) {
 			background-color: #ffffff;
+		}
+	}
+	.grey-bg {
+		@media (max-width: 550px) {
+			background-color: #f8f8f8;
 		}
 	}
 	.app-details {
