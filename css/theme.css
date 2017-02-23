@@ -932,10 +932,20 @@ html, body {
     width: 100%; }
 
 .app-listing .heading-wrapper {
-  text-align: center; }
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto; }
   @media (max-width: 550px) {
     .app-listing .heading-wrapper {
-      display: none; } }
+      padding: 15px 10px; } }
+  .app-listing .heading-wrapper #mce-EMAIL {
+    width: 50%;
+    display: inline-block; }
+  .app-listing .heading-wrapper .clear {
+    display: inline-block; }
+    .app-listing .heading-wrapper .clear #mc-embedded-subscribe {
+      background-color: #4a5374;
+      color: #e8e8e8; }
 .app-listing .container {
   width: 100%; }
 .app-listing .columns {
@@ -1018,7 +1028,7 @@ html, body {
     @media (max-width: 750px) {
       .app-detail .container .transparent-bg {
         display: block;
-        background-image: url(../img/space/app-icon.png);
+        background-image: url(../img/delta/app_icon.png);
         background-position: center;
         background-size: cover;
         opacity: 0.1; } }
